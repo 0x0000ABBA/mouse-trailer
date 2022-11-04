@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(36, 36, 36);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    cursor: none;
+}
+
+#trailer {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 1000000;
+    background-color:white;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:hover > #trailer {
+    opacity: 1;
+}
+
+.content__wrapper {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interactable {
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: 100%;;
+    background-repeat: no-repeat;
+    opacity: 0.65;
+    transition: 0.5s ease;
+
+}
+
+.interactable:hover {
+    background-size: 105%;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
